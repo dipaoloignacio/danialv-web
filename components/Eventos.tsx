@@ -36,6 +36,27 @@ export default function Eventos() {
           <EventList />
         </div>
 
+        {/* YouTube Videos */}
+        <div className="mt-16 sm:mt-20 md:mt-24">
+          <div className="flex items-center gap-4 mb-8">
+            <span className="w-8 sm:w-12 h-px bg-outline" />
+            <span className="font-mono text-[10px] tracking-widest text-outline uppercase">Sets recientes</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            {['IqZNWU7sVGg', 'JcmcEEBCNuA', 'uWzC5BRumRE'].map((id) => (
+              <div key={id} className="relative w-full aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title="Dani Alv DJ Set"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full border border-outline"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   )
@@ -51,7 +72,7 @@ function EventList() {
         >
           <div className="flex items-start sm:items-center gap-6 sm:gap-12 flex-1 min-w-0">
             <div className="text-left flex-shrink-0">
-              <span className="block font-mono text-[10px] sm:text-xs font-bold text-primary mb-1">{event.date}</span>
+              <span className="block font-mono text-[10px] sm:text-xs font-bold text-primary mb-1">{event.date.slice(5)}</span>
               <span className="block font-mono text-[9px] sm:text-[10px] tracking-[0.15em] text-outline uppercase">{event.status}</span>
             </div>
             <div className="min-w-0">
