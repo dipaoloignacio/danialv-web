@@ -1,24 +1,25 @@
 'use client'
 
-import Image from 'next/image'
-
-const WA_NUMBER = '5492614000000'
+const WA_NUMBER = '5492617204957'
 
 export default function Hero() {
   return (
     <header className="relative w-full min-h-screen h-screen flex items-end justify-start overflow-hidden pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0" >
-        <img
-          src="/hero.png"
-          alt="Dani Alv DJ performing"
-          className="grayscale opacity-70 w-auto h-full sm:object-contain object-cover mx-auto block"
-          style={{
-            minHeight: '500px',
-            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-            maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-          }}
-        />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet="/hero.png" />
+          <img
+            src="/dani-hero.PNG"
+            alt="Dani Alv DJ performing"
+            className="grayscale opacity-70 w-auto h-full sm:object-contain object-cover mx-auto block"
+            style={{
+              minHeight: '500px',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+              maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+            }}
+          />
+        </picture>
       </div>
 
       {/* Content */}

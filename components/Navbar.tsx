@@ -10,7 +10,7 @@ const navLinks = [
   { href: '#contacto', label: 'CONTACTO' },
 ]
 
-const WA_NUMBER = '5492614000000'
+const WA_NUMBER = '5492617204957'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)

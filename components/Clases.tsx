@@ -1,4 +1,4 @@
-const WA_NUMBER = '5492614000000'
+const WA_NUMBER = '5492617204957'
 
 const courses = [
   {

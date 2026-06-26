@@ -10,7 +10,6 @@ export default function SobreMi() {
   return (
     <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 md:px-16 border-b border-outline" id="sobre-mi">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-7xl mx-auto">
-
         {/* Text - shows second on mobile, first on desktop */}
         <div className="order-2 md:order-1">
           <div className="inline-block border border-outline px-3 py-1 mb-6 md:mb-8">
@@ -55,9 +54,6 @@ export default function SobreMi() {
               className="relative z-10 w-full border border-outline grayscale contrast-125 object-cover"
               style={{ maxHeight: '500px', objectFit: 'cover', objectPosition: 'center' }}
             />
-          </div>
-          <div className="absolute bottom-4 right-4 z-20 bg-background border border-outline p-3 font-mono text-[10px]">
-            <span className="text-primary-container">LOC:</span> MENDOZA_STUDIO
           </div>
         </div>
 

@@ -1,35 +1,39 @@
-const WA_NUMBER = '5492614000000'
+const WA_NUMBER = '5492617204957'
 
 export default function Contacto() {
   return (
     <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 md:px-16 bg-primary-container text-on-primary" id="contacto">
+
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-        <span className="font-mono text-[10px] tracking-[0.2em] font-bold border border-black px-4 py-1 mb-8 md:mb-12">
-          SYSTEM_OVERRIDE
-        </span>
+        <div className="flex flex-col items-center text-center">
 
-        <h2 className="font-display font-black mb-4 md:mb-6"
-          style={{ fontSize: 'clamp(40px, 8vw, 80px)', lineHeight: '1.0', letterSpacing: '-0.04em' }}>
-          CONNECT_NOW
-        </h2>
+          <span className="font-mono text-[10px] tracking-[0.2em] font-bold border border-black px-4 py-1 mb-8 md:mb-12">
+            SYSTEM_OVERRIDE
+          </span>
 
-        <p className="font-body text-base sm:text-lg mb-8 md:mb-12 opacity-80 max-w-md">
-          ¿Querés reservar una clase o contratar un set? Escribinos directo por WhatsApp.
-        </p>
+          <h2 className="font-display font-black mb-4 md:mb-6"
+            style={{ fontSize: 'clamp(40px, 8vw, 80px)', lineHeight: '1.0', letterSpacing: '-0.04em' }}>
+            CONNECT_NOW
+          </h2>
 
-        <a
-          href={`https://wa.me/${WA_NUMBER}?text=Hola Dani! Me gustaría obtener más información`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-black text-white px-8 sm:px-12 md:px-16 py-5 md:py-6 font-mono text-xs sm:text-sm tracking-widest font-bold hover:bg-white hover:text-black transition-colors flex items-center gap-3 sm:gap-4 mb-6 md:mb-8 w-full sm:w-auto justify-center"
-        >
-          <WhatsAppIcon />
-          CONTACTAR POR WHATSAPP
-        </a>
+          <p className="font-body text-base sm:text-lg mb-8 md:mb-12 opacity-80 max-w-md">
+            ¿Querés reservar una clase o contratar un set? Escribinos directo por WhatsApp.
+          </p>
 
-        <p className="font-mono text-[10px] tracking-[0.15em] opacity-60">
-          Respondemos en menos de 24hs
-        </p>
+          <a
+            href={`https://wa.me/${WA_NUMBER}?text=Hola Dani! Me gustaría obtener más información`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black text-white px-8 sm:px-12 md:px-16 py-5 md:py-6 font-mono text-xs sm:text-sm tracking-widest font-bold hover:bg-white hover:text-black transition-colors flex items-center gap-3 sm:gap-4 mb-6 md:mb-8 w-full sm:w-auto justify-center"
+          >
+            <WhatsAppIcon />
+            CONTACTAR POR WHATSAPP
+          </a>
+
+          <p className="font-mono text-[10px] tracking-[0.15em] opacity-60">
+            Respondemos en menos de 24hs
+          </p>
+        </div>
       </div>
     </section>
   )
